@@ -27,9 +27,7 @@ app.use(cors());
 app.use("/contact", contact);
 
 app.use((req, res) => {
-  res.json({
-    message: "Your request was successful",
-  });
+  res.end("Samuel Osinloye");
 });
 
 module.exports = app;
