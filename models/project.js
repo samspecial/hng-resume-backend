@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 const validator = require("validator");
-const contactSchema = mongoose.Schema({
+const projectSchema = mongoose.Schema({
   firstname: {
     type: String,
     required: [true, "Please provide your firstname"],
@@ -35,4 +35,4 @@ const contactSchema = mongoose.Schema({
   },
 });
 
-module.exports = mongoose.model("Contact", contactSchema);
+module.exports = mongoose.model("Project", projectSchema);

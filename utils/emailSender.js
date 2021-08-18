@@ -20,14 +20,3 @@ exports.sendEmail = async (option) => {
       console.error(error.message);
     });
 };
-
-exports.contactFormEmail = {
-  from: "sender",
-  to: "psalmueloye@gmail.com",
-  subject: "subject",
-  text,
-  html: `<h3>Hello ${firstname}</h3>
-    <p>We are excited to have you here.</p>
-    <p>Kindly follow the link below to activate your account</p>
-    <p>This expires in 1 hour time. Click <a href=${url}>here</a> now.</p>`,
-};
