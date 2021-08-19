@@ -55,7 +55,7 @@ exports.createContact = async (req, res, next) => {
     sendEmail(notificationEmail);
 
     res.status(201).json({
-      message: "Message successfully sent. kndly check your mail",
+      message: `Thank you for contacting me ${firstname}, an email has been sent to ${email}.`,
     });
   } catch (error) {
     return res.status(500).json({
